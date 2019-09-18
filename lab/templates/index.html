@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<div class="row">
+    <div class="col-3">
+        <div class="card" id="test-card">
+            <div class="card-header">
+                Select the Test
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    {% for test in tests %}
+                    <label class="checkbox test">
+                        <input type="checkbox" value="{{test.test_name}}">&nbsp{{test.test_name}}
+                    </label>
+                    {% endfor %}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-9">
+        
+
+
+    
+    </div>
+</div>
+{% else %}
+<h1 class="mt-3 text-center text-white">
+    Welcome to user please login.....
+</h1>
+
+{% endif %}
+<script>
+        $(document).ready(function()
+        {
+               $('.test input[type="checkbox"]').on("click", function()
+                {
+                if($(this). prop("checked") == true)
+                alert($(this).val());
+                
+           
+                });
+       });
+       
+</script>
+{% endblock %}
+

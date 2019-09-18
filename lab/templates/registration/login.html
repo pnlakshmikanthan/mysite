@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}Login{% endblock %}
+
+
+{% block content %}
+    <div class="d-flex mt-3" id="login">
+        <div class="card m-auto"  >
+                <h5 class="card-header">Login</h5>
+            <div class="card-body ">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-danger">Sign-in</button>
+                </form>
+            </div>
+        </div>
+</div>
+
+
+{% endblock %}
