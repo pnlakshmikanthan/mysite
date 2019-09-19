@@ -15,14 +15,15 @@
     
 }
 .checkbox:hover{
-    background-color:rgb(16, 112, 221);
-    box-shadow: 5px 5px 5px rgb(72, 73, 73);
+    background-color:rgb(117, 231, 114);
+    box-shadow: 5px 5px 3px rgb(139, 141, 141);
 }
 
 .col-9 {
-    background-color:rgb(41, 39, 39);
+    background-image: linear-gradient(to left, rgb(62, 8, 133), rgb(104, 28, 91));
     overflow: scroll;
-    height: 100vh;
+    
+    
 }
 .bg-custom a{
     color: aliceblue;
@@ -34,7 +35,8 @@
 .list-group-item {
     overflow: scroll;
     height: 100vh;
-    background-color: rgb(41, 39, 39);
+    
+    background-image: linear-gradient(to left, rgb(62, 8, 133), rgb(104, 28, 91));
 }
 
 .col-3 {
@@ -60,4 +62,8 @@ body{
 }
 #login .card{
     min-height: 50px;
+}
+.table-color{
+    color: aliceblue;
+    border: red solid 1px;
 }
