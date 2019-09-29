@@ -15,6 +15,7 @@ ALLOWED_HOSTS = ['lakshmikanthan.pythonanywhere.com','127.0.0.1']
 INSTALLED_APPS = [
     'lab.apps.LabConfig',
     'crispy_forms',
+    'rest_framework',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -115,3 +116,4 @@ LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL='/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+

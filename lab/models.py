@@ -18,6 +18,9 @@ class Doctor(models.Model):
 
 class Test(models.Model):
     test_name=models.CharField(max_length=50)
+    test_result=models.CharField(max_length=50,null=True)
+    test_normalvalue=models.CharField(max_length=50,null=True)
+    
 
 
     
