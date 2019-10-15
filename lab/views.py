@@ -5,10 +5,9 @@ from django.contrib import messages
 from .models import Person,Doctor,Test
 
 
-def index(request):
-        tests=Test.objects.all
-        context={'tests':tests}
-        return render(request,'index.html',context)  
+def index (request):
+    return render(request,'index.html')
+
 
 def signup(request):
     if request.method == 'POST':
@@ -23,6 +22,7 @@ def signup(request):
     else:
         form = UserCreationForm()
         return render(request, 'registration/signup.html', {'form': form})
+
 
 
 
